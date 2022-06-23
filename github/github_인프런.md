@@ -318,5 +318,79 @@ git remote remove (origin 등 원격 이름)
 git clone (원격 저장소 주소)
 ~~~
 
+---
+
+## 브랜치 충돌 해결하기
+
+~~~
+//원격으로 커밋 밀어올리기 
+git push
+
+// 원격의 커밋 당겨오기
+git pull
+~~~
+
+
+
+### push 할것 있을시 pull 하는 방법 
+
+~~~
+//2가지 방법 
+// merge 방식
+git pull -no-rebase
+
+//rebase 방식
+git pull --rebase 
+
+push
+~~~
+
+
+
+### 로컬의 내역 강제 push해보기
+
+~~~
+git push --force
+~~~
+
+---
+
+## 원격의 브랜치 다루기
+
+### 로컬에서 브랜치 만들어 원격에 push 해보기
+
+~~~
+//브랜치 만들기 
+git siwtch from-local
+
+//원격의 브랜치 명시 및 기본설정
+git push -u origin from-local
+
+// 로컬과 원격의 브랜치들 확인
+git branch --all
+~~~
+
+
+
+### 원격의 브랜치 로컬에 받아오기
+
+~~~
+// GitHub에서 from-remote 브랜치 만들기
+
+// 원격의 변경사항 확인
+git fetch
+
+// 로컬에 같은 이름의 브랜치를 생성하여 연결하고 switch
+git switch -t origin/from-remote
+~~~
+
+
+
+### 원격의 브랜치 삭제
+
+~~~
+git push (원격 이름) --delete (원격의 브랜치명)
+~~~
+
 
 
