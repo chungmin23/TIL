@@ -19,7 +19,7 @@ public boolean equals(Object obj){
 
 
 
-### 9-4 hash-code()
+### 9-4 hash-code() 
 
 - 객체의 해시코드를 반환하는 메서드
 
