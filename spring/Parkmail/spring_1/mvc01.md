@@ -41,5 +41,22 @@
 
 1. contextLoaderListener객체를 만들고 root-context.xml에서 hikariconfig api를 사용해서 각 커넥션 풀 만들기ㅣ에 필요한 정보를 정의를 해둔다
 
+### mapper 연결
 
+![image-20220815134301609](image/mvc01/image-20220815134301609.png)
+
+1. 보드 맵퍼을 sqlSessionFactoryBean을 상속을 받는데 화면에 나오진않고 스프링이 자동처리
+
+### mapper interface 와 mapper file을 연결
+
+![image-20220815134456218](image/mvc01/image-20220815134456218.png)
+
+1. 메퍼 인터페이스를 mapper.xml에 네임스페이스와 연결 
+2. 각 메서드를 id값과 연결을 해준다
+
+
+
+@Autowired
+
+특정 객체를 주입받는다
 
