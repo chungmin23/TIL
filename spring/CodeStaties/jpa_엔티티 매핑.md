@@ -41,3 +41,16 @@ private List<Order> orders = new ArrayList<>();
 
 1. 먼저 다대일 매핑을 한다
 2. 그다음 일대다 매핑을 해준다
+
+
+
+
+
+## Auditable
+
+공통적으로 들어간것을 따로 만들어서 안에 중복을 제거를 할수 있다 
+
+~~~
+extends Auditable
+~~~
+
